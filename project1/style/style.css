@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    text-align: center;
+	background-color: lightgrey;
+}
+.wrapper{
+	width: 800px;
+	height: 300px;
+	background-color: white;
+	margin: 50px auto;
+	box-shadow: 5px 5px 10px grey;
+	position: relative;
+}
+.wrapper h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-size: 24px;
+	padding-top: 20px;
+	animation-name: header;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.floater{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: float;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+.wrapper:hover .floater{
+	animation-play-state:running;
+}
+.loader{
+	margin: auto;
+	height: 100px;
+	margin-top: 100px;
+	border: 1px solid lightgrey;
+	line-height: 100px;
+}
+.loader span{
+	background-color: #3ADF00;
+	width: 10px;
+	height: 0px;
+	margin: 0 5px;
+	display: inline-block;
+	animation-name:loader;
+	animation-duration: 1s;
+	vertical-align: bottom;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.loader span:nth-child(2){
+	animation-delay: .1s;
+}
+.loader span:nth-child(3){
+	animation-delay: .2s;
+}
+.loader span:nth-child(4){
+	animation-delay: .3s;
+}
+.loader span:nth-child(5){
+	animation-delay: .4s;
+}
+.loader span:nth-child(6){
+	animation-delay: .5s;
+}
+.loader span:nth-child(7){
+	animation-delay: .6s;
+}
+.loader span:nth-child(8){
+	animation-delay: .7s;
+}
+.loader span:nth-child(9){
+	animation-delay: .8s;
+}
+.loader span:nth-child(10){
+	animation-delay: 9s;
+}
+
+.spinner{
+	width: 100px;
+	height: 100px;
+	background-color: lightgrey;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 50px;
+	position: relative;
+}
+.spinner::after{
+	content: '';
+	height: 100px;
+	width: 100px;
+	border: 4px solid red;
+	display: inline-block;
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	border-radius: 50%;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	animation-name: spin;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+/**/
